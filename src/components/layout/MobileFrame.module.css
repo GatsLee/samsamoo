@@ -2,16 +2,37 @@
   min-height: 100dvh;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding: 24px 0;
 }
 
+/*
+ * 데스크톱에서는 402x874 기기 틀로 보이되, 창이 낮으면 높이를 창에 맞춰 줄인다.
+ * 줄어든 만큼은 각 화면의 본문이 내부 스크롤로 흡수한다.
+ */
 .screen {
   position: relative;
-  width: var(--screen-width);
-  height: var(--screen-height);
+  width: min(var(--screen-width), 100vw);
+  height: min(var(--screen-height), calc(100dvh - 48px));
   background: var(--color-surface);
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+/* 실제 모바일에서는 기기 틀을 걷어내고 화면 전체를 쓴다. */
+@media (max-width: 480px) {
+  .viewport {
+    padding: 0;
+    align-items: stretch;
+  }
+
+  .screen {
+    width: 100vw;
+    height: 100dvh;
+    border-radius: 0;
+    box-shadow: none;
+  }
 }
