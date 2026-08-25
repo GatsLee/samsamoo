@@ -1,0 +1,37 @@
+.groups {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.groupLabel {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-sub);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  padding: 8px 12px;
+  border: 0;
+  border-radius: var(--radius-chip);
+  background: var(--color-chip);
+  color: var(--color-ink);
+  font-size: 15px;
+}
+
+.chip[data-selected="true"] {
+  background: var(--color-brand);
+  color: var(--color-on-brand);
+}

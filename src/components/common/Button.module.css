@@ -1,0 +1,35 @@
+.button {
+  width: 100%;
+  height: 48px;
+  border: 0;
+  border-radius: var(--radius-chip);
+  font-size: 16px;
+  font-weight: 500;
+  transition: opacity 0.15s ease;
+}
+
+.button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.button[data-variant="primary"] {
+  background: var(--color-brand);
+  color: var(--color-on-brand);
+}
+
+.button[data-variant="neutral"] {
+  background: var(--color-mute);
+  color: var(--color-ink);
+}
+
+.button[data-variant="text"] {
+  background: none;
+  color: var(--color-brand);
+  height: auto;
+}
+
+.button[data-size="small"] {
+  height: 40px;
+  font-size: 14px;
+}

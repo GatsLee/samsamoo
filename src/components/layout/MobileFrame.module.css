@@ -1,0 +1,17 @@
+.viewport {
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px 0;
+}
+
+.screen {
+  position: relative;
+  width: var(--screen-width);
+  height: var(--screen-height);
+  background: var(--color-surface);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}

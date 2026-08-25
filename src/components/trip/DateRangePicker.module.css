@@ -1,0 +1,91 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.summary {
+  display: flex;
+  gap: 10px;
+}
+
+.slot {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px 14px;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-chip);
+}
+
+.slot[data-filled="true"] {
+  border-color: var(--color-brand);
+}
+
+.slotLabel {
+  font-size: 12px;
+  color: var(--color-sub);
+}
+
+.slotValue {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.calendar {
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-card);
+  padding: 12px;
+}
+
+.calendarHead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.weekdays,
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+}
+
+.weekday {
+  text-align: center;
+  font-size: 11px;
+  color: var(--color-sub);
+  padding: 4px 0;
+}
+
+.day {
+  aspect-ratio: 1;
+  border: 0;
+  background: none;
+  border-radius: 6px;
+  font-size: 13px;
+  color: var(--color-ink);
+}
+
+.day:disabled {
+  color: var(--color-faint);
+}
+
+.day[data-edge="true"] {
+  background: var(--color-brand);
+  color: var(--color-on-brand);
+}
+
+.day[data-inrange="true"] {
+  background: var(--color-brand-tint);
+}
+
+.hint {
+  font-size: 12px;
+  color: var(--color-sub);
+}

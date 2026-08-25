@@ -1,0 +1,27 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bars {
+  display: flex;
+  gap: 6px;
+  flex: 1;
+}
+
+.bar {
+  flex: 1;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--color-line);
+}
+
+.bar[data-on="true"] {
+  background: var(--color-brand);
+}
+
+.count {
+  font-size: 13px;
+  color: var(--color-sub);
+}

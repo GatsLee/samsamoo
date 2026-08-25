@@ -1,0 +1,99 @@
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 16px var(--space-screen-x);
+  overflow-y: auto;
+}
+
+.flowHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.titleBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 14px;
+  color: var(--color-sub);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.countRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.countLabel {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.counter {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-brand);
+}
+
+.hint {
+  font-size: 13px;
+  color: var(--color-sub);
+}
+
+.summaryCard {
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-card);
+  padding: 0 16px;
+}
+
+.summaryRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 0;
+}
+
+.summaryRow + .summaryRow {
+  border-top: 1px solid var(--color-line);
+}
+
+.summaryLabel {
+  width: 52px;
+  font-size: 13px;
+  color: var(--color-sub);
+}
+
+.summaryValue {
+  flex: 1;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.summaryEdit {
+  border: 0;
+  background: none;
+  font-size: 13px;
+  color: var(--color-brand);
+  padding: 0;
+}
+
+.footer {
+  padding: 8px var(--space-screen-x) 28px;
+}

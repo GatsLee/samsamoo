@@ -1,0 +1,59 @@
+/* Figma 와이어프레임에서 뽑은 토큰. 값 변경은 여기서만 한다. */
+:root {
+  --color-brand: #00a6a6;
+  --color-brand-tint: #e6f6f6;
+  --color-brand-track: #e6f0f0;
+
+  --color-ink: #1a1a1a;
+  --color-sub: #8a9090;
+  --color-faint: #c4c9c9;
+
+  --color-line: #e8eaea;
+  --color-mute: #f7f8f8;
+  --color-chip: #f2f4f4;
+  --color-surface: #ffffff;
+
+  --color-danger: #e5484d;
+  --color-on-brand: #ffffff;
+
+  --space-screen-x: 24px;
+  --radius-card: 12px;
+  --radius-hero: 16px;
+  --radius-chip: 8px;
+  --radius-pill: 999px;
+
+  --screen-width: 402px;
+  --screen-height: 874px;
+  --content-width: 354px;
+
+  --font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+    "Malgun Gothic", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  color: var(--color-ink);
+  background: #eeeeee;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

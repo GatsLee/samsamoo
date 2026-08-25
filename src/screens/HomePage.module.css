@@ -1,0 +1,43 @@
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 16px var(--space-screen-x);
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.greeting {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.name {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.summary {
+  font-size: 13px;
+  color: var(--color-sub);
+}
+
+.others {
+  display: flex;
+  flex-direction: column;
+}
+
+.othersLabel {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-sub);
+  padding-bottom: 4px;
+}
